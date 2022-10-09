@@ -15,6 +15,28 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/getStoreInfoResp'
+                
+  /sports/{id}:
+    get:
+      summary: GetSportByID
+      description: Get sport by ID
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getSportResp'                
+  /sports:
+    get:
+      summary: GetSports
+      description: Get sports
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getSportsResp'
+               
 components:
   schemas:
     getStoreInfoResp:
