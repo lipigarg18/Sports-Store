@@ -1,0 +1,17 @@
+openapi: 3.0.1
+info:
+  title: Sports Store Service
+  version: 1.0.0
+servers:
+  - url: localhost:8080/
+paths:
+  /store-info:
+    get:
+      summary: GetStoreInfo
+      description: Get the store info details
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getStoreInfoResp
