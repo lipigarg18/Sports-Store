@@ -51,3 +51,34 @@ components:
           type: string
         price:
           type: number
+          
+    getSportsResp:
+      type: object
+      description: Get Sports response object
+      properties:
+        user_data:
+          type: array
+          description: Individual sport data object
+          items:
+            properties:
+              name:
+                type: string
+              sport_id:
+                type: string
+              type:
+                type: string
+              player_count:
+                type: number
+                
+    getSportResp:
+      type: object
+      description: Individual sport data object
+      properties:
+        name:
+          type: string
+        sport_id:
+          type: string
+        type:
+          type: string
+        player_count:
+          type: number
