@@ -14,4 +14,18 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/getStoreInfoResp
+                $ref: '#/components/schemas/getStoreInfoResp'
+components:
+  schemas:
+    getStoreInfoResp:
+      type: object
+      description: Get Store info Response object
+      properties:
+        item_name:
+          type: string
+        upload_timestamp:
+          type: string
+        sell_timestamp:
+          type: string
+        price:
+          type: number
